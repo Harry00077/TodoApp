@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.main_div{
+  width: 100vw;
+  height: 100vh;
+  background: #6983aa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center_div{
+  width: 25%;
+  height: 80vh;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+h1{
+  color: white;
+  background: transparent;
+  background-color: #8566aa;
+  padding: 6px 0px 2px 0px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+
+input{
+  text-align: center;
+  height: 25px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 150;
+  width: 60%;
+  outline: none;
+  border-bottom: 2px solid #8566aa;
+}
+
+.center_div button{
+  margin-top: 10px;
+  min-height: 40px;
+  width: 20%;
+  outline: none;
+  border: none;
+  border-radius: 16%;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: 'Bree Serif', serif;
+  border-color: transparent;
+  background-color: #bc95eb;
+  color: #f4f4f4;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+}
+
+
+button:hover{
+  background-color: #8566aa;
+}
+.list{
+  display: flex;
+}
+.del_button{
+  width: 5px;
+  height: 5px;
+  font-size: 5px;
+}
+
+.list button{
+    margin-left: auto;
+    display: block;
+    margin-right: 25px;
+    width: 35px;
+    min-height: 15px;
+}
+
+
+.list button:hover{
+  background-color: #f12626cb;
+}
+
+
+ul{
+  margin-top: 10px;
+}
+
+ul li{
+  padding-left: 0px;
+  margin-left: -10px;
+  text-align: left;
+  margin-top: 6px ;
+  font-size: 20px;
+  font-weight: 500 bold;
+  min-height: 40px;
+  display: flex;
+  text-transform: capitalize;
+  color: #725497;
+  align-items: center;
+}
+
