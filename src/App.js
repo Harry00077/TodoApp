@@ -4,6 +4,7 @@ import UsersList from "./UsersList";
 const App = () => {
   const [inputList, setInputList] = useState("");
   const [users, setUsers] = useState([]);
+  const [editUsers, setEditUsers] = 
 
   const userEvents = (events) => {
     setInputList (events.target.value);
@@ -15,7 +16,7 @@ const App = () => {
       return [...oldUsers, inputList]
     });
     setInputList("");
-  };
+  }
   const deleteUsers =(id) => {
     console.log("deleted");
     setUsers((oldUsers) =>{
@@ -23,6 +24,7 @@ const App = () => {
         return index !== id;
       })
     })
+    
 }
 
   return (
@@ -34,7 +36,7 @@ const App = () => {
             <br/>
             <input type="text" placeholder="Add User Name" 
             value={inputList} onChange={userEvents}/>
-            <button onClick={listOfUsers}> Add </button>
+            <button onClick={listOfUsers}> + </button>
             <ul>
               {users.map((userName, index) => {
                 return <UsersList 
